@@ -46,7 +46,7 @@ To run the development container:
 docker run --rm -v$(pwd)/data:/srv -p 8080:80 mailculatorf-dev
 ```
 
-Now you can access the filebrowser interface at: http://localhost:8080 .
+Now you can access the filebrowser interface at: [open browser](http://localhost:8080).
 
 ### Stage 3: Production
 
