@@ -43,7 +43,7 @@ docker build --no-cache -t mailculatorf-dev --target=mailculatorf-dev .
 
 To run the development container:
 ```bash
-docker run --rm -v$(pwd)/data:/srv -p 8080:80 mailculatorf-dev
+docker run --rm -v$(pwd)/data:/srv -v$(pwd)/filebrowser.db.dev:/filebrowser.db -p 8080:80 mailculatorf-dev
 ```
 
 Now you can access the filebrowser interface at: [open browser](http://localhost:8080).
