@@ -46,6 +46,12 @@ To run the development container:
 docker run --rm -v$(pwd)/data:/srv -v$(pwd)/filebrowser.db.dev:/filebrowser.db -p 8080:80 mailculatorf-dev
 ```
 
+Create some dummy data, (after having launched the container):
+
+```bash
+./create_dummy_data.sh
+```
+
 Now you can access the filebrowser interface at: [open browser](http://localhost:8080).
 
 ### Stage 3: Production
@@ -59,9 +65,4 @@ The container is configured to run the mailculator filebrowser binary.
 To build the image:
 ```bash
 docker build --no-cache -t mailculatorf-prod --target=mailculatorf-prod .
-```
-
-To run the production container:
-```bash
-docker run --rm mailculatorf-prod
 ```
