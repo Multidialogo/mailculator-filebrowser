@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf data/maildir/users/*
+
 AUTH_URL="http://localhost:8080/api/login"
 USER_CREATE_URL="http://localhost:8080/api/users"
 ADMIN_USERNAME="admin"

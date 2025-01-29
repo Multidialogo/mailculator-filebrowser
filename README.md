@@ -49,7 +49,7 @@ docker run --rm -v$(pwd)/data:/srv -v$(pwd)/.filebrowser.json.dev:/.filebrowser.
 Create some dummy data, (after having launched the container):
 
 ```bash
-./create_dummy_data.sh
+sudo ./create_dummy_data.sh
 ```
 
 Now you can access the filebrowser interface at: [open browser](http://localhost:8080).
