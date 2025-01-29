@@ -51,15 +51,13 @@ Create some dummy data, (after having launched the container):
 ```bash
 sudo ./create_dummy_data.sh
 ```
-Manage the filebrowser database with adminer:
+Manage the filebrowser database with sqlite shell:
 ```bash
-docker run -d \
-  --name mailculatorf-db \
-  -p 8081:80 \
-  -v $(pwd)/filebrowser.db.dev:/var/www/db/filebrowser.db \
-  adminer:latest \
-  --default-db-driver=sqlite \
-  --default-db-host=/var/www/db/filebrowser.db
+docker run -ti --rm \
+  -v $(pwd)/filebrowser.db.dev:/apps/filebrowser.db \
+  -w /apps \
+  alpine/sqlite \
+  filebrowser.db .tables
 ```
 Now you can access the filebrowser database at: [open browser](http://localhost:8081).
 
