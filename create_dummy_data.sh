@@ -27,7 +27,7 @@ fi
 # Loop to create 20 users
 for i in {1..100}; do
     JSON_PAYLOAD=$(cat <<EOF
-{"what":"user","which":[],"data":{"scope":"","locale":"it","viewMode":"mosaic","singleClick":false,"sorting":{"by":"","asc":false},"perm":{"admin":false,"execute":false,"create":false,"rename":false,"modify":false,"delete":false,"share":false,"download":true},"commands":[],"hideDotfiles":false,"dateFormat":false,"username":"user${i}","password":"password${i}","rules":[],"lockPassword":true,"id":0}}
+{"what":"user","which":[],"data":{"scope":"","locale":"it","viewMode":"list","singleClick":false,"sorting":{"by":"","asc":false},"perm":{"admin":false,"execute":false,"create":false,"rename":false,"modify":false,"delete":false,"share":false,"download":true},"commands":[],"hideDotfiles":true,"dateFormat":false,"username":"user${i}","password":"password${i}","rules":[],"lockPassword":true,"id":0}}
 EOF
 )
 
