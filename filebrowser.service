@@ -1,0 +1,12 @@
+[Unit]
+Description=File Browser
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/filebrowser/.env
+ExecStart=/usr/local/bin/filebrowser -r ${APP_PATH}
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
