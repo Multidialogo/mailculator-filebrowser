@@ -1,0 +1,12 @@
+{
+  "port": 80,
+  "address": "",
+  "root": "/tmp/maildir",cd
+  "database": "/database.db",
+  "log": "stdout",
+  "baseURL": "",
+  "auth": {
+    "username": "root",
+    "password": "password"
+  }
+}

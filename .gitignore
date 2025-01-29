@@ -1,4 +1,4 @@
-.env.prod
+.filebrowser.json.prod
 
 data/maildir/outbox/*
 !data/maildir/outbox/.gitkeep
