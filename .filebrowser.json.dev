@@ -2,11 +2,11 @@
   "port": 80,
   "address": "",
   "root": "/srv/maildir",
-  "database": "/database.db",
+  "database": "/filebrowser.db",
   "log": "stdout",
   "baseURL": "",
   "auth": {
-    "username": "root",
-    "password": "password"
+    "username": "admin",
+    "password": "admin"
   }
 }

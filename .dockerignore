@@ -3,3 +3,6 @@ README.md
 .dockerignore
 .gitignore
 data
+filebrowser.db.*
+.filebrowser.json.*
+create_dummy_data.sh

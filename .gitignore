@@ -1,8 +1,2 @@
 .filebrowser.json.prod
-
-data/maildir/outbox/*
-!data/maildir/outbox/.gitkeep
-data/maildir/sent/*
-!data/maildir/sent/.gitkeep
-data/maildir/failure/*
-!data/maildir/failure/.gitkeep
+data/maildir/*
