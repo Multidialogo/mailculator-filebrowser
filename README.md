@@ -45,14 +45,23 @@ To run the development container:
 ```bash
 docker run --rm -v$(pwd)/data:/srv -v$(pwd)/.filebrowser.json.dev:/.filebrowser.json -v$(pwd)/filebrowser.db.dev:/filebrowser.db -p 8080:80 mailculatorf-dev
 ```
+Now you can access the filebrowser interface at: [open browser](http://localhost:8080).
 
 Create some dummy data, (after having launched the container):
-
 ```bash
 sudo ./create_dummy_data.sh
 ```
-
-Now you can access the filebrowser interface at: [open browser](http://localhost:8080).
+Manage the filebrowser database with adminer:
+```bash
+docker run -d \
+  --name mailculatorf-db \
+  -p 8081:80 \
+  -v $(pwd)/filebrowser.db.dev:/var/www/db/filebrowser.db \
+  adminer:latest \
+  --default-db-driver=sqlite \
+  --default-db-host=/var/www/db/filebrowser.db
+```
+Now you can access the filebrowser database at: [open browser](http://localhost:8081).
 
 ### Stage 3: Production
 
