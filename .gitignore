@@ -1,3 +1,4 @@
 .filebrowser.json.prod
+filebrowser.db.prod
 data/maildir/*
 !data/maildir/.gitkeep
