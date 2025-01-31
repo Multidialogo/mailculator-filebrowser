@@ -1,0 +1,4 @@
+#!/bin/bash
+chmod 444 filebrowser.db.test
+chmod 444 filebrowser.db.dev
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+if git diff --cached --name-only | grep -q "filebrowser.db.test"; then
+  echo "ERROR: Changes to filebrowser.db.dev are not allowed!"
+  exit 1
+fi
+
+if git diff --cached --name-only | grep -q "filebrowser.db.dev"; then
+  echo "ERROR: Changes to filebrowser.db.dev are not allowed!"
+  exit 1
+fi
+
